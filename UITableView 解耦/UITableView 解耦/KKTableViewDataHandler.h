@@ -20,7 +20,7 @@ typedef NSInteger (^SectionConfigBlock)(UITableView *tableView);
 typedef void (^CellDidSelectBlock)(UITableView *tableView, NSIndexPath *indexPath);
 
 
-@interface KKTableViewDataSource : NSObject <UITableViewDataSource, UITableViewDelegate>
+@interface KKTableViewDataHandler : NSObject <UITableViewDataSource, UITableViewDelegate>
 
 
 /**
@@ -77,15 +77,15 @@ typedef void (^CellDidSelectBlock)(UITableView *tableView, NSIndexPath *indexPat
  ******* demo: [[[self configcell:block] configRow:block] configSection:block]...
  */
 
-- (KKTableViewDataSource *)configCell: (CellConfigBlock )block;
-- (KKTableViewDataSource *)configRow: (RowConfigBlock )block;
-- (KKTableViewDataSource *)configSection: (SectionConfigBlock )block;
+- (KKTableViewDataHandler *)configCell: (CellConfigBlock )block;
+- (KKTableViewDataHandler *)configRow: (RowConfigBlock )block;
+- (KKTableViewDataHandler *)configSection: (SectionConfigBlock )block;
 
 
 /**
  如在此进行 push & present 跳转
  记得要使用 weakSelf
  */
-- (KKTableViewDataSource *)didSelectCell: (CellDidSelectBlock )block;
+- (KKTableViewDataHandler *)didSelectCell: (CellDidSelectBlock )block;
 
 @end

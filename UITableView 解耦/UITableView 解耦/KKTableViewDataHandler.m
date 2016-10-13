@@ -6,9 +6,9 @@
 //  Copyright © 2016年 TsuiYuenHong. All rights reserved.
 //
 
-#import "KKTableViewDataSource.h"
+#import "KKTableViewDataHandler.h"
 
-@implementation KKTableViewDataSource
+@implementation KKTableViewDataHandler
 
 - (instancetype)init{
     self = [super init];
@@ -44,22 +44,22 @@
 
 #pragma mark - 链式操作实现
 
-- (KKTableViewDataSource *)configSection:(SectionConfigBlock)block{
+- (KKTableViewDataHandler *)configSection:(SectionConfigBlock)block{
     _configSectionBlock = [block copy];
     return self;
 }
 
--(KKTableViewDataSource *)configRow:(RowConfigBlock)block{
+-(KKTableViewDataHandler *)configRow:(RowConfigBlock)block{
     _configRowBlock = [block copy];
     return self;
 }
 
-- (KKTableViewDataSource *)configCell:(CellConfigBlock)block{
+- (KKTableViewDataHandler *)configCell:(CellConfigBlock)block{
     _configCellBlock = [block copy];
     return self;
 }
 
-- (KKTableViewDataSource *)didSelectCell:(CellDidSelectBlock)block{
+- (KKTableViewDataHandler *)didSelectCell:(CellDidSelectBlock)block{
     _cellDidSelectBlock = [block copy];
     return self;
 }

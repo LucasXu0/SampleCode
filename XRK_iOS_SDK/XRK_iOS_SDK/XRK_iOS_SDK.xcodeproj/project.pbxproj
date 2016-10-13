@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3482C4451D7A7FA8003CF694 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3482C4441D7A7FA8003CF694 /* main.m */; };
+		3482C4481D7A7FA8003CF694 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3482C4471D7A7FA8003CF694 /* AppDelegate.m */; };
+		3482C44B1D7A7FA8003CF694 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3482C44A1D7A7FA8003CF694 /* ViewController.m */; };
+		3482C44E1D7A7FA8003CF694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3482C44C1D7A7FA8003CF694 /* Main.storyboard */; };
+		3482C4501D7A7FA8003CF694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3482C44F1D7A7FA8003CF694 /* Assets.xcassets */; };
+		3482C4531D7A7FA8003CF694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3482C4511D7A7FA8003CF694 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3482C4401D7A7FA8003CF694 /* XRK_iOS_SDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XRK_iOS_SDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3482C4441D7A7FA8003CF694 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3482C4461D7A7FA8003CF694 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3482C4471D7A7FA8003CF694 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3482C4491D7A7FA8003CF694 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3482C44A1D7A7FA8003CF694 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3482C44D1D7A7FA8003CF694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3482C44F1D7A7FA8003CF694 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3482C4521D7A7FA8003CF694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3482C4541D7A7FA8003CF694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3482C45B1D7A827F003CF694 /* XRKConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XRKConstant.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3482C43D1D7A7FA8003CF694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3482C4371D7A7FA8003CF694 = {
+			isa = PBXGroup;
+			children = (
+				3482C4421D7A7FA8003CF694 /* XRK_iOS_SDK */,
+				3482C4411D7A7FA8003CF694 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3482C4411D7A7FA8003CF694 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3482C4401D7A7FA8003CF694 /* XRK_iOS_SDK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3482C4421D7A7FA8003CF694 /* XRK_iOS_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				3482C45A1D7A803E003CF694 /* XRKTools */,
+				3482C4461D7A7FA8003CF694 /* AppDelegate.h */,
+				3482C4471D7A7FA8003CF694 /* AppDelegate.m */,
+				3482C4491D7A7FA8003CF694 /* ViewController.h */,
+				3482C44A1D7A7FA8003CF694 /* ViewController.m */,
+				3482C44C1D7A7FA8003CF694 /* Main.storyboard */,
+				3482C44F1D7A7FA8003CF694 /* Assets.xcassets */,
+				3482C4511D7A7FA8003CF694 /* LaunchScreen.storyboard */,
+				3482C4541D7A7FA8003CF694 /* Info.plist */,
+				3482C4431D7A7FA8003CF694 /* Supporting Files */,
+			);
+			path = XRK_iOS_SDK;
+			sourceTree = "<group>";
+		};
+		3482C4431D7A7FA8003CF694 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3482C4441D7A7FA8003CF694 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3482C45A1D7A803E003CF694 /* XRKTools */ = {
+			isa = PBXGroup;
+			children = (
+				3482C45B1D7A827F003CF694 /* XRKConstant.h */,
+			);
+			name = XRKTools;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3482C43F1D7A7FA8003CF694 /* XRK_iOS_SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3482C4571D7A7FA8003CF694 /* Build configuration list for PBXNativeTarget "XRK_iOS_SDK" */;
+			buildPhases = (
+				3482C43C1D7A7FA8003CF694 /* Sources */,
+				3482C43D1D7A7FA8003CF694 /* Frameworks */,
+				3482C43E1D7A7FA8003CF694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XRK_iOS_SDK;
+			productName = XRK_iOS_SDK;
+			productReference = 3482C4401D7A7FA8003CF694 /* XRK_iOS_SDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3482C4381D7A7FA8003CF694 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = TsuiYuenHong;
+				TargetAttributes = {
+					3482C43F1D7A7FA8003CF694 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 446D3AAR7E;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3482C43B1D7A7FA8003CF694 /* Build configuration list for PBXProject "XRK_iOS_SDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3482C4371D7A7FA8003CF694;
+			productRefGroup = 3482C4411D7A7FA8003CF694 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3482C43F1D7A7FA8003CF694 /* XRK_iOS_SDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3482C43E1D7A7FA8003CF694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3482C4531D7A7FA8003CF694 /* LaunchScreen.storyboard in Resources */,
+				3482C4501D7A7FA8003CF694 /* Assets.xcassets in Resources */,
+				3482C44E1D7A7FA8003CF694 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3482C43C1D7A7FA8003CF694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3482C44B1D7A7FA8003CF694 /* ViewController.m in Sources */,
+				3482C4481D7A7FA8003CF694 /* AppDelegate.m in Sources */,
+				3482C4451D7A7FA8003CF694 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3482C44C1D7A7FA8003CF694 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3482C44D1D7A7FA8003CF694 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3482C4511D7A7FA8003CF694 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3482C4521D7A7FA8003CF694 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3482C4551D7A7FA8003CF694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3482C4561D7A7FA8003CF694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3482C4581D7A7FA8003CF694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 446D3AAR7E;
+				INFOPLIST_FILE = XRK_iOS_SDK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TsuiYuenHong.XRK-iOS-SDK";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3482C4591D7A7FA8003CF694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 446D3AAR7E;
+				INFOPLIST_FILE = XRK_iOS_SDK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TsuiYuenHong.XRK-iOS-SDK";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3482C43B1D7A7FA8003CF694 /* Build configuration list for PBXProject "XRK_iOS_SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3482C4551D7A7FA8003CF694 /* Debug */,
+				3482C4561D7A7FA8003CF694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3482C4571D7A7FA8003CF694 /* Build configuration list for PBXNativeTarget "XRK_iOS_SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3482C4581D7A7FA8003CF694 /* Debug */,
+				3482C4591D7A7FA8003CF694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3482C4381D7A7FA8003CF694 /* Project object */;
+}

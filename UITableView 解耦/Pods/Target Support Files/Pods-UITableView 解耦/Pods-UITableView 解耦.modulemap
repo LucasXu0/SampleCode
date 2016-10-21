@@ -1,0 +1,6 @@
+framework module Pods_UITableView___ {
+  umbrella header "Pods-UITableView 解耦-umbrella.h"
+
+  export *
+  module * { export * }
+}

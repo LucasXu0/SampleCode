@@ -14,7 +14,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-DataSource 解耦.xcscheme</key>
+		<key>Pods-UITableView 解耦.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ReactiveCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>97187CFCA6CA46926B24530ABF138778</key>
+		<key>07F2F5F291753FDEC0B825D96A8BFE2E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B9C5D98D8ADD7148978F671F156051D3</key>
+		<key>21675633D1A06CCDEC0FCE999D64B577</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EBE33197DFF5736FB990D1E852CCCDEE</key>
+		<key>9BF9B4D21C0D4F2A74FD3E0FC4DC71E3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EABD28446DBBC3274019286AA7E2BA9C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -64,6 +64,14 @@
     return self;
 }
 
+- (KKTableViewDataHandler *(^)(SectionConfigBlock))configSection{
+    
+    return ^KKTableViewDataHandler *(SectionConfigBlock block){
+        self.configSectionBlock = block;
+        return self;
+    };
+}
+
 #pragma mark - TableView DataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{

@@ -1,11 +1,11 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'DataSource 解耦' do
+target 'UITableView 解耦' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  # use_frameworks!
+  use_frameworks!
 
   # Pods for DataSource 解耦
   pod 'MLeaksFinder'
-
+  pod 'ReactiveCocoa', '~> 2.5.0'
 end

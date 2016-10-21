@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "RACTuple.h"
 
 typedef void (^KKTableViewCellConfigBlock)(id cell, id data);
 
@@ -18,7 +19,6 @@ typedef NSInteger (^SectionConfigBlock)(UITableView *tableView);
 
 // UITableViewDelegate
 typedef void (^CellDidSelectBlock)(UITableView *tableView, NSIndexPath *indexPath);
-
 
 @interface KKTableViewDataHandler : NSObject <UITableViewDataSource, UITableViewDelegate>
 
@@ -80,6 +80,10 @@ typedef void (^CellDidSelectBlock)(UITableView *tableView, NSIndexPath *indexPat
 - (KKTableViewDataHandler *)configCell: (CellConfigBlock )block;
 - (KKTableViewDataHandler *)configRow: (RowConfigBlock )block;
 - (KKTableViewDataHandler *)configSection: (SectionConfigBlock )block;
+
+- (KKTableViewDataHandler *(^)(CellConfigBlock block))kk_configCell;
+- (KKTableViewDataHandler *(^)(RowConfigBlock block))kk_configRow;
+- (KKTableViewDataHandler *(^)(SectionConfigBlock block))kk_configSection;
 
 
 /**

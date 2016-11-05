@@ -1,0 +1,8 @@
+use_frameworks!
+
+target 'KTV点歌' do
+    pod 'RxSwift',    '~> 3.0'
+    pod 'RxCocoa',    '~> 3.0'
+    pod 'Alamofire', '~> 4.0'
+    pod 'SwiftyJSON'
+end

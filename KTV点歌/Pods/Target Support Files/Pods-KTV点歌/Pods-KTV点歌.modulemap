@@ -1,0 +1,6 @@
+framework module Pods_KTV__ {
+  umbrella header "Pods-KTV点歌-umbrella.h"
+
+  export *
+  module * { export * }
+}

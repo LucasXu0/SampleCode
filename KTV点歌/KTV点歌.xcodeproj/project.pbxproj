@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		340318761DCCDB78000AF89D /* InsertDownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340318741DCCDB78000AF89D /* InsertDownloadViewController.swift */; };
+		340318771DCCDB78000AF89D /* InsertDownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 340318751DCCDB78000AF89D /* InsertDownloadViewController.xib */; };
+		3403187A1DCCDF54000AF89D /* AlterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340318781DCCDF54000AF89D /* AlterViewController.swift */; };
+		3403187B1DCCDF54000AF89D /* AlterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 340318791DCCDF54000AF89D /* AlterViewController.xib */; };
+		3403187E1DCCE086000AF89D /* AlterSingerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3403187C1DCCE086000AF89D /* AlterSingerViewController.swift */; };
+		3403187F1DCCE086000AF89D /* AlterSingerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3403187D1DCCE086000AF89D /* AlterSingerViewController.xib */; };
+		340318821DCCE59B000AF89D /* AlterSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340318801DCCE59B000AF89D /* AlterSongViewController.swift */; };
+		340318831DCCE59B000AF89D /* AlterSongViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 340318811DCCE59B000AF89D /* AlterSongViewController.xib */; };
+		340318861DCCF119000AF89D /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340318841DCCF118000AF89D /* DownloadViewController.swift */; };
+		340318871DCCF119000AF89D /* DownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 340318851DCCF119000AF89D /* DownloadViewController.xib */; };
+		340318891DCD79DA000AF89D /* const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340318881DCD79DA000AF89D /* const.swift */; };
+		34E844AB1DCB6A8E00274B2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E844AA1DCB6A8E00274B2A /* AppDelegate.swift */; };
+		34E844AD1DCB6A8E00274B2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E844AC1DCB6A8E00274B2A /* ViewController.swift */; };
+		34E844B01DCB6A8E00274B2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34E844AE1DCB6A8E00274B2A /* Main.storyboard */; };
+		34E844B21DCB6A8E00274B2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34E844B11DCB6A8E00274B2A /* Assets.xcassets */; };
+		34E844B51DCB6A8E00274B2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34E844B31DCB6A8E00274B2A /* LaunchScreen.storyboard */; };
+		34E844BE1DCB6AB100274B2A /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E844BC1DCB6AB100274B2A /* SelectViewController.swift */; };
+		34E844BF1DCB6AB100274B2A /* SelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E844BD1DCB6AB100274B2A /* SelectViewController.xib */; };
+		34E844C21DCC3FAF00274B2A /* InsertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E844C01DCC3FAF00274B2A /* InsertViewController.swift */; };
+		34E844C31DCC3FAF00274B2A /* InsertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E844C11DCC3FAF00274B2A /* InsertViewController.xib */; };
+		34E844C61DCC407D00274B2A /* InsertSingerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E844C41DCC407D00274B2A /* InsertSingerViewController.swift */; };
+		34E844C71DCC407D00274B2A /* InsertSingerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E844C51DCC407D00274B2A /* InsertSingerViewController.xib */; };
+		34E844CA1DCC5EDE00274B2A /* InsertSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E844C81DCC5EDE00274B2A /* InsertSongViewController.swift */; };
+		34E844CB1DCC5EDE00274B2A /* InsertSongViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E844C91DCC5EDE00274B2A /* InsertSongViewController.xib */; };
+		A1971FED0B5F908318D8349E /* Pods_KTV__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5A5FAED87F14B91AD0F07D /* Pods_KTV__.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		340318741DCCDB78000AF89D /* InsertDownloadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertDownloadViewController.swift; sourceTree = "<group>"; };
+		340318751DCCDB78000AF89D /* InsertDownloadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InsertDownloadViewController.xib; sourceTree = "<group>"; };
+		340318781DCCDF54000AF89D /* AlterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlterViewController.swift; sourceTree = "<group>"; };
+		340318791DCCDF54000AF89D /* AlterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlterViewController.xib; sourceTree = "<group>"; };
+		3403187C1DCCE086000AF89D /* AlterSingerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlterSingerViewController.swift; sourceTree = "<group>"; };
+		3403187D1DCCE086000AF89D /* AlterSingerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlterSingerViewController.xib; sourceTree = "<group>"; };
+		340318801DCCE59B000AF89D /* AlterSongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlterSongViewController.swift; path = ../AlterSongViewController.swift; sourceTree = "<group>"; };
+		340318811DCCE59B000AF89D /* AlterSongViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AlterSongViewController.xib; path = ../AlterSongViewController.xib; sourceTree = "<group>"; };
+		340318841DCCF118000AF89D /* DownloadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
+		340318851DCCF119000AF89D /* DownloadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadViewController.xib; sourceTree = "<group>"; };
+		340318881DCD79DA000AF89D /* const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = const.swift; sourceTree = "<group>"; };
+		34E844A71DCB6A8E00274B2A /* KTV点歌.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KTV点歌.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34E844AA1DCB6A8E00274B2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		34E844AC1DCB6A8E00274B2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		34E844AF1DCB6A8E00274B2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34E844B11DCB6A8E00274B2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34E844B41DCB6A8E00274B2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34E844B61DCB6A8E00274B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34E844BC1DCB6AB100274B2A /* SelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
+		34E844BD1DCB6AB100274B2A /* SelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectViewController.xib; sourceTree = "<group>"; };
+		34E844C01DCC3FAF00274B2A /* InsertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertViewController.swift; sourceTree = "<group>"; };
+		34E844C11DCC3FAF00274B2A /* InsertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InsertViewController.xib; sourceTree = "<group>"; };
+		34E844C41DCC407D00274B2A /* InsertSingerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertSingerViewController.swift; sourceTree = "<group>"; };
+		34E844C51DCC407D00274B2A /* InsertSingerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InsertSingerViewController.xib; sourceTree = "<group>"; };
+		34E844C81DCC5EDE00274B2A /* InsertSongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertSongViewController.swift; sourceTree = "<group>"; };
+		34E844C91DCC5EDE00274B2A /* InsertSongViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InsertSongViewController.xib; sourceTree = "<group>"; };
+		431EB5E288057D87847FBC5F /* Pods-KTV点歌.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KTV点歌.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KTV点歌/Pods-KTV点歌.debug.xcconfig"; sourceTree = "<group>"; };
+		4933821A2CEB1AEB34020977 /* Pods-KTV点歌.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KTV点歌.release.xcconfig"; path = "Pods/Target Support Files/Pods-KTV点歌/Pods-KTV点歌.release.xcconfig"; sourceTree = "<group>"; };
+		DC5A5FAED87F14B91AD0F07D /* Pods_KTV__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KTV__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34E844A41DCB6A8E00274B2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1971FED0B5F908318D8349E /* Pods_KTV__.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34E8449E1DCB6A8E00274B2A = {
+			isa = PBXGroup;
+			children = (
+				34E844A91DCB6A8E00274B2A /* KTV点歌 */,
+				34E844A81DCB6A8E00274B2A /* Products */,
+				45E11CE63D08DAEFF1EA1082 /* Pods */,
+				CF76510E6B8CCBC97EB03F77 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		34E844A81DCB6A8E00274B2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34E844A71DCB6A8E00274B2A /* KTV点歌.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34E844A91DCB6A8E00274B2A /* KTV点歌 */ = {
+			isa = PBXGroup;
+			children = (
+				34E844AA1DCB6A8E00274B2A /* AppDelegate.swift */,
+				34E844AC1DCB6A8E00274B2A /* ViewController.swift */,
+				34E844AE1DCB6A8E00274B2A /* Main.storyboard */,
+				34E844B11DCB6A8E00274B2A /* Assets.xcassets */,
+				34E844B31DCB6A8E00274B2A /* LaunchScreen.storyboard */,
+				34E844B61DCB6A8E00274B2A /* Info.plist */,
+				34E844BC1DCB6AB100274B2A /* SelectViewController.swift */,
+				34E844BD1DCB6AB100274B2A /* SelectViewController.xib */,
+				34E844C01DCC3FAF00274B2A /* InsertViewController.swift */,
+				34E844C11DCC3FAF00274B2A /* InsertViewController.xib */,
+				34E844C41DCC407D00274B2A /* InsertSingerViewController.swift */,
+				34E844C51DCC407D00274B2A /* InsertSingerViewController.xib */,
+				34E844C81DCC5EDE00274B2A /* InsertSongViewController.swift */,
+				34E844C91DCC5EDE00274B2A /* InsertSongViewController.xib */,
+				340318741DCCDB78000AF89D /* InsertDownloadViewController.swift */,
+				340318751DCCDB78000AF89D /* InsertDownloadViewController.xib */,
+				340318781DCCDF54000AF89D /* AlterViewController.swift */,
+				340318791DCCDF54000AF89D /* AlterViewController.xib */,
+				3403187C1DCCE086000AF89D /* AlterSingerViewController.swift */,
+				3403187D1DCCE086000AF89D /* AlterSingerViewController.xib */,
+				340318801DCCE59B000AF89D /* AlterSongViewController.swift */,
+				340318811DCCE59B000AF89D /* AlterSongViewController.xib */,
+				340318841DCCF118000AF89D /* DownloadViewController.swift */,
+				340318851DCCF119000AF89D /* DownloadViewController.xib */,
+				340318881DCD79DA000AF89D /* const.swift */,
+			);
+			path = "KTV点歌";
+			sourceTree = "<group>";
+		};
+		45E11CE63D08DAEFF1EA1082 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				431EB5E288057D87847FBC5F /* Pods-KTV点歌.debug.xcconfig */,
+				4933821A2CEB1AEB34020977 /* Pods-KTV点歌.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF76510E6B8CCBC97EB03F77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC5A5FAED87F14B91AD0F07D /* Pods_KTV__.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34E844A61DCB6A8E00274B2A /* KTV点歌 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34E844B91DCB6A8E00274B2A /* Build configuration list for PBXNativeTarget "KTV点歌" */;
+			buildPhases = (
+				D82140F9E172D6351F0A5B27 /* [CP] Check Pods Manifest.lock */,
+				34E844A31DCB6A8E00274B2A /* Sources */,
+				34E844A41DCB6A8E00274B2A /* Frameworks */,
+				34E844A51DCB6A8E00274B2A /* Resources */,
+				2CB32AD932280D682453E1A2 /* [CP] Embed Pods Frameworks */,
+				F4744BB5E126FA12BE9BC0FC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KTV点歌";
+			productName = "KTV点歌";
+			productReference = 34E844A71DCB6A8E00274B2A /* KTV点歌.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34E8449F1DCB6A8E00274B2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = TsuiYuenHong;
+				TargetAttributes = {
+					34E844A61DCB6A8E00274B2A = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 446D3AAR7E;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 34E844A21DCB6A8E00274B2A /* Build configuration list for PBXProject "KTV点歌" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34E8449E1DCB6A8E00274B2A;
+			productRefGroup = 34E844A81DCB6A8E00274B2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34E844A61DCB6A8E00274B2A /* KTV点歌 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34E844A51DCB6A8E00274B2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34E844BF1DCB6AB100274B2A /* SelectViewController.xib in Resources */,
+				34E844B51DCB6A8E00274B2A /* LaunchScreen.storyboard in Resources */,
+				340318871DCCF119000AF89D /* DownloadViewController.xib in Resources */,
+				340318771DCCDB78000AF89D /* InsertDownloadViewController.xib in Resources */,
+				340318831DCCE59B000AF89D /* AlterSongViewController.xib in Resources */,
+				34E844B21DCB6A8E00274B2A /* Assets.xcassets in Resources */,
+				34E844CB1DCC5EDE00274B2A /* InsertSongViewController.xib in Resources */,
+				3403187B1DCCDF54000AF89D /* AlterViewController.xib in Resources */,
+				34E844C31DCC3FAF00274B2A /* InsertViewController.xib in Resources */,
+				34E844B01DCB6A8E00274B2A /* Main.storyboard in Resources */,
+				34E844C71DCC407D00274B2A /* InsertSingerViewController.xib in Resources */,
+				3403187F1DCCE086000AF89D /* AlterSingerViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CB32AD932280D682453E1A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KTV点歌/Pods-KTV点歌-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D82140F9E172D6351F0A5B27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4744BB5E126FA12BE9BC0FC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KTV点歌/Pods-KTV点歌-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34E844A31DCB6A8E00274B2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34E844AD1DCB6A8E00274B2A /* ViewController.swift in Sources */,
+				34E844C21DCC3FAF00274B2A /* InsertViewController.swift in Sources */,
+				340318761DCCDB78000AF89D /* InsertDownloadViewController.swift in Sources */,
+				3403187A1DCCDF54000AF89D /* AlterViewController.swift in Sources */,
+				34E844CA1DCC5EDE00274B2A /* InsertSongViewController.swift in Sources */,
+				34E844BE1DCB6AB100274B2A /* SelectViewController.swift in Sources */,
+				340318821DCCE59B000AF89D /* AlterSongViewController.swift in Sources */,
+				340318861DCCF119000AF89D /* DownloadViewController.swift in Sources */,
+				3403187E1DCCE086000AF89D /* AlterSingerViewController.swift in Sources */,
+				340318891DCD79DA000AF89D /* const.swift in Sources */,
+				34E844AB1DCB6A8E00274B2A /* AppDelegate.swift in Sources */,
+				34E844C61DCC407D00274B2A /* InsertSingerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		34E844AE1DCB6A8E00274B2A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34E844AF1DCB6A8E00274B2A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		34E844B31DCB6A8E00274B2A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34E844B41DCB6A8E00274B2A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34E844B71DCB6A8E00274B2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		34E844B81DCB6A8E00274B2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34E844BA1DCB6A8E00274B2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 431EB5E288057D87847FBC5F /* Pods-KTV点歌.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 446D3AAR7E;
+				INFOPLIST_FILE = "KTV点歌/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TsuiYuenHong.KTV--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+			};
+			name = Debug;
+		};
+		34E844BB1DCB6A8E00274B2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4933821A2CEB1AEB34020977 /* Pods-KTV点歌.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 446D3AAR7E;
+				INFOPLIST_FILE = "KTV点歌/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TsuiYuenHong.KTV--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34E844A21DCB6A8E00274B2A /* Build configuration list for PBXProject "KTV点歌" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34E844B71DCB6A8E00274B2A /* Debug */,
+				34E844B81DCB6A8E00274B2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34E844B91DCB6A8E00274B2A /* Build configuration list for PBXNativeTarget "KTV点歌" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34E844BA1DCB6A8E00274B2A /* Debug */,
+				34E844BB1DCB6A8E00274B2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34E8449F1DCB6A8E00274B2A /* Project object */;
+}

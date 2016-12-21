@@ -33,7 +33,7 @@ class AlterViewController: UIViewController {
         self.navigationController?.pushViewController(alterSongVC, animated: true)
     }
     
-    //MARK: - 下载歌曲
+    //MARK: - 点播歌曲
     @IBAction func downloadSong(_ sender: Any) {
         
         // 增加歌曲的 Srate
@@ -43,6 +43,7 @@ class AlterViewController: UIViewController {
         
         let downloadVC = DownloadViewController.init()
         downloadVC.title = self.title
+        downloadVC.songID = self.songID
         self.navigationController?.pushViewController(downloadVC, animated: true)
     }
     

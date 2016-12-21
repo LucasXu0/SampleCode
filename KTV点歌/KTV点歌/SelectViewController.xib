@@ -14,6 +14,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectViewController" customModule="KTV点歌" customModuleProvider="target">
             <connections>
                 <outlet property="pinyinButton" destination="rqs-zH-cnB" id="K5k-Vh-dLS"/>
+                <outlet property="rankListButton" destination="krr-er-pbH" id="xbD-YE-6iB"/>
                 <outlet property="searchTableView" destination="FSk-ib-GbD" id="AeI-hI-fn2"/>
                 <outlet property="searchTextField" destination="VFV-ad-y00" id="eKP-a2-UwM"/>
                 <outlet property="singerButton" destination="pdU-1c-LBI" id="Qno-2O-iLb"/>
@@ -27,7 +28,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtM-f3-fnV">
-                    <rect key="frame" x="253" y="80" width="35" height="30"/>
+                    <rect key="frame" x="252" y="80" width="35" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="搜索">
                         <color key="titleColor" red="0.99529057741165161" green="0.18890038132667542" blue="0.0057908031158149242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -37,7 +38,7 @@
                     </connections>
                 </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="搜索歌手、歌曲、拼音" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VFV-ad-y00">
-                    <rect key="frame" x="16" y="80" width="215" height="30"/>
+                    <rect key="frame" x="15" y="80" width="215" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="ZAm-iY-Yhr"/>
                         <constraint firstAttribute="width" constant="215" id="kx1-UV-vli"/>
@@ -50,8 +51,8 @@
                     <rect key="frame" x="0.0" y="167" width="375" height="500"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdU-1c-LBI">
-                    <rect key="frame" x="34" y="129" width="62" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdU-1c-LBI">
+                    <rect key="frame" x="15" y="129" width="62" height="30"/>
                     <state key="normal" title="歌手找歌">
                         <color key="titleColor" red="0.99529057741165161" green="0.18890038132667542" blue="0.0057908031158149242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
@@ -59,8 +60,8 @@
                         <action selector="clickSinger:" destination="-1" eventType="touchUpInside" id="O01-yv-mh6"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfO-V4-ieU">
-                    <rect key="frame" x="142" y="129" width="62" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfO-V4-ieU">
+                    <rect key="frame" x="97" y="129" width="62" height="30"/>
                     <state key="normal" title="歌曲找歌">
                         <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -69,7 +70,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DhX-Ts-3Gy">
-                    <rect key="frame" x="298" y="80" width="70" height="30"/>
+                    <rect key="frame" x="297" y="80" width="70" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="ouE-A9-g1L"/>
                     </constraints>
@@ -81,9 +82,11 @@
                         <action selector="clickAllSong:" destination="-1" eventType="touchUpInside" id="Pri-Qg-bKn"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqs-zH-cnB">
-                    <rect key="frame" x="239" y="129" width="62" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqs-zH-cnB">
+                    <rect key="frame" x="179" y="129" width="62" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="62" id="e5x-RA-oWR"/>
+                    </constraints>
                     <state key="normal" title="拼音找歌">
                         <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -91,28 +94,42 @@
                         <action selector="clickPinYin:" destination="-1" eventType="touchUpInside" id="gSx-G0-r6K"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krr-er-pbH">
+                    <rect key="frame" x="261" y="129" width="46" height="30"/>
+                    <state key="normal" title="排行榜">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickRankList:" destination="-1" eventType="touchUpInside" id="iOb-Kb-Job"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="VFV-ad-y00" firstAttribute="top" secondItem="YtM-f3-fnV" secondAttribute="top" id="1c3-3C-Af0"/>
-                <constraint firstItem="pfO-V4-ieU" firstAttribute="leading" secondItem="pdU-1c-LBI" secondAttribute="trailing" constant="46" id="4jb-qu-RGB"/>
+                <constraint firstItem="krr-er-pbH" firstAttribute="leading" secondItem="rqs-zH-cnB" secondAttribute="trailing" constant="20" id="2Io-G1-2ba"/>
+                <constraint firstItem="pfO-V4-ieU" firstAttribute="leading" secondItem="pdU-1c-LBI" secondAttribute="trailing" constant="20" id="4jb-qu-RGB"/>
                 <constraint firstItem="DhX-Ts-3Gy" firstAttribute="baseline" secondItem="YtM-f3-fnV" secondAttribute="firstBaseline" id="5wi-Xr-k9g"/>
-                <constraint firstItem="VFV-ad-y00" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="94b-v2-h2P"/>
+                <constraint firstItem="rqs-zH-cnB" firstAttribute="leading" secondItem="pfO-V4-ieU" secondAttribute="trailing" constant="20" id="6jp-bO-uk6"/>
+                <constraint firstItem="VFV-ad-y00" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="94b-v2-h2P"/>
                 <constraint firstItem="DhX-Ts-3Gy" firstAttribute="leading" secondItem="YtM-f3-fnV" secondAttribute="trailing" constant="10" id="96f-Lw-rCg"/>
-                <constraint firstItem="pfO-V4-ieU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="142" id="HUV-GT-mCx"/>
                 <constraint firstItem="FSk-ib-GbD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="I0Y-Td-gfe"/>
+                <constraint firstItem="rqs-zH-cnB" firstAttribute="baseline" secondItem="pfO-V4-ieU" secondAttribute="baseline" id="YIN-Nl-p7f"/>
                 <constraint firstAttribute="trailing" secondItem="FSk-ib-GbD" secondAttribute="trailing" id="ZDS-FY-ZSV"/>
                 <constraint firstAttribute="bottom" secondItem="FSk-ib-GbD" secondAttribute="bottom" id="bCm-U5-Uxh"/>
                 <constraint firstItem="VFV-ad-y00" firstAttribute="bottom" secondItem="YtM-f3-fnV" secondAttribute="bottom" id="dft-ad-mBd"/>
                 <constraint firstItem="YtM-f3-fnV" firstAttribute="leading" secondItem="VFV-ad-y00" secondAttribute="trailing" constant="22" id="gW2-Oc-qqR"/>
+                <constraint firstItem="pdU-1c-LBI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="gpQ-u4-5of"/>
                 <constraint firstItem="pfO-V4-ieU" firstAttribute="baseline" secondItem="pdU-1c-LBI" secondAttribute="baseline" id="qiG-UK-tpg"/>
                 <constraint firstItem="DhX-Ts-3Gy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="qqq-82-4LL"/>
                 <constraint firstItem="FSk-ib-GbD" firstAttribute="top" secondItem="pfO-V4-ieU" secondAttribute="bottom" constant="8" symbolic="YES" id="rRV-fG-5so"/>
                 <constraint firstItem="pdU-1c-LBI" firstAttribute="top" secondItem="VFV-ad-y00" secondAttribute="bottom" constant="19" id="rpM-EQ-FBY"/>
                 <constraint firstItem="DhX-Ts-3Gy" firstAttribute="firstBaseline" secondItem="YtM-f3-fnV" secondAttribute="baseline" id="x1U-es-0Me"/>
                 <constraint firstItem="VFV-ad-y00" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="xjq-uq-AOi"/>
+                <constraint firstItem="rqs-zH-cnB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="179" id="xmg-KI-TTr"/>
+                <constraint firstItem="krr-er-pbH" firstAttribute="baseline" secondItem="pfO-V4-ieU" secondAttribute="baseline" id="zPT-uD-Nfh"/>
             </constraints>
-            <point key="canvasLocation" x="245" y="-10"/>
+            <point key="canvasLocation" x="147.5" y="-37.5"/>
         </view>
     </objects>
 </document>

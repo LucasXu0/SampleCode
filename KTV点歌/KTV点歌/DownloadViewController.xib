@@ -1,12 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DownloadViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DownloadViewController" customModule="KTV点歌" customModuleProvider="target">
             <connections>
+                <outlet property="coverImage" destination="IyP-EF-4cu" id="Thr-CD-KxN"/>
+                <outlet property="lyricLabel" destination="H7T-9Y-k0s" id="JNl-5Y-fcb"/>
+                <outlet property="musicLabel" destination="S6E-Ih-OwE" id="4NP-ob-74F"/>
+                <outlet property="timeLabel" destination="uq9-ep-Iko" id="zvm-Xt-6xn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +22,54 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IyP-EF-4cu">
+                    <rect key="frame" x="67" y="100" width="240" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="KzB-bO-0J9"/>
+                        <constraint firstAttribute="height" constant="240" id="z4s-8t-5jV"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌曲下载地址" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6E-Ih-OwE">
+                    <rect key="frame" x="87" y="472" width="200" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="n8l-ot-4wd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌词下载地址" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7T-9Y-k0s">
+                    <rect key="frame" x="87" y="421" width="200" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="Lus-Ot-HKD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uq9-ep-Iko">
+                    <rect key="frame" x="87.5" y="370" width="200" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="qCF-Zn-ZRU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="H7T-9Y-k0s" firstAttribute="leading" secondItem="S6E-Ih-OwE" secondAttribute="leading" id="EXB-Pg-FO0"/>
+                <constraint firstItem="IyP-EF-4cu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="GBV-38-aJG"/>
+                <constraint firstItem="H7T-9Y-k0s" firstAttribute="centerX" secondItem="uq9-ep-Iko" secondAttribute="centerX" id="GW0-N1-1mT"/>
+                <constraint firstItem="H7T-9Y-k0s" firstAttribute="top" secondItem="uq9-ep-Iko" secondAttribute="bottom" constant="30" id="NLr-d7-hyM"/>
+                <constraint firstItem="H7T-9Y-k0s" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TlV-h5-dET"/>
+                <constraint firstItem="uq9-ep-Iko" firstAttribute="top" secondItem="IyP-EF-4cu" secondAttribute="bottom" constant="30" id="UCA-1C-ZIR"/>
+                <constraint firstItem="H7T-9Y-k0s" firstAttribute="centerX" secondItem="IyP-EF-4cu" secondAttribute="centerX" id="Vwc-nZ-qj9"/>
+                <constraint firstItem="S6E-Ih-OwE" firstAttribute="top" secondItem="H7T-9Y-k0s" secondAttribute="bottom" constant="30" id="mSX-3R-Rgn"/>
+            </constraints>
+            <point key="canvasLocation" x="-152" y="48"/>
         </view>
     </objects>
 </document>

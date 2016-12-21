@@ -14,14 +14,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var tabBarController: UITabBarController?
+    var loginViewController: LoginViewController?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         
-        self.configTarbarVC()
+        // self.configTarbarVC()
         
-        self.window?.rootViewController = self.tabBarController
+        self.loginViewController = LoginViewController.init()
+        
+        self.window?.rootViewController = self.loginViewController
         self.window?.makeKeyAndVisible()
         
         return true

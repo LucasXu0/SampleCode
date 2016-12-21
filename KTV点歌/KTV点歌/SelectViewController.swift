@@ -10,7 +10,6 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-let cellID = "selectTableViewCell"
 
 class SelectViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -20,12 +19,16 @@ class SelectViewController: UIViewController, UITableViewDelegate, UITableViewDa
         case pinyin
     }
     
+    let cellID = "selectTableViewCell"
+
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var searchTableView: UITableView!
     
+    @IBOutlet weak var rankListButton: UIButton!
     @IBOutlet weak var songButton: UIButton!
     @IBOutlet weak var singerButton: UIButton!
     @IBOutlet weak var pinyinButton: UIButton!
+    
     var songs:JSON = []
     var searchTag:KTVSearchTag = .singer // 默认按歌手查询
     
@@ -72,6 +75,31 @@ class SelectViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.clearTableView()
     }
     
+    //MARK: - 排行榜找歌
+    @IBAction func clickRankList(_ sender: Any) {
+        self.rankListButton.setTitleColor(UIColor.red, for: .normal)
+        self.pinyinButton.setTitleColor(UIColor.lightGray, for: .normal)
+        self.singerButton.setTitleColor(UIColor.lightGray, for: .normal)
+        self.songButton.setTitleColor(UIColor.lightGray, for: .normal)
+        self.clearTableView()
+    }
+    
+    //MRAK: - 查询所有歌曲
+    @IBAction func clickAllSong(_ sender: Any) {
+        
+        Alamofire.request("\(KTVURL)/selectAllSong").responseJSON { (response) in
+            
+            switch response.result{
+            case .success(let value):
+                self.songs = JSON(value)
+                print(self.songs)
+                self.searchTableView.reloadData()
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
     //MARK: - 查询操作
     @IBAction func clickSearchButton(_ sender: Any) {
         
@@ -101,22 +129,9 @@ class SelectViewController: UIViewController, UITableViewDelegate, UITableViewDa
             }
         }
     }
+
+    //MARK: - 查询排行榜种类
     
-    //MRAK: - 查询所有歌曲
-    @IBAction func clickAllSong(_ sender: Any) {
-        
-        Alamofire.request("\(KTVURL)/selectAllSong").responseJSON { (response) in
-            
-            switch response.result{
-            case .success(let value):
-                self.songs = JSON(value)
-                print(self.songs)
-                self.searchTableView.reloadData()
-            case .failure(let error):
-                print(error)
-            }
-        }
-    }
     
     
     //MARK: - TableView DataSource & Delegate

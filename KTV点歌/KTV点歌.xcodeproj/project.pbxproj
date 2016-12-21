@@ -18,6 +18,10 @@
 		340318861DCCF119000AF89D /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340318841DCCF118000AF89D /* DownloadViewController.swift */; };
 		340318871DCCF119000AF89D /* DownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 340318851DCCF119000AF89D /* DownloadViewController.xib */; };
 		340318891DCD79DA000AF89D /* const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340318881DCD79DA000AF89D /* const.swift */; };
+		3422557A1E0A7DFD0048FC46 /* BookHouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342255781E0A7DFD0048FC46 /* BookHouseViewController.swift */; };
+		3422557B1E0A7DFD0048FC46 /* BookHouseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 342255791E0A7DFD0048FC46 /* BookHouseViewController.xib */; };
+		34226D111E0A72D6009DFA24 /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34226D0F1E0A72D6009DFA24 /* HouseViewController.swift */; };
+		34226D121E0A72D6009DFA24 /* HouseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34226D101E0A72D6009DFA24 /* HouseViewController.xib */; };
 		34E844AB1DCB6A8E00274B2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E844AA1DCB6A8E00274B2A /* AppDelegate.swift */; };
 		34E844AD1DCB6A8E00274B2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E844AC1DCB6A8E00274B2A /* ViewController.swift */; };
 		34E844B01DCB6A8E00274B2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34E844AE1DCB6A8E00274B2A /* Main.storyboard */; };
@@ -31,6 +35,8 @@
 		34E844C71DCC407D00274B2A /* InsertSingerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E844C51DCC407D00274B2A /* InsertSingerViewController.xib */; };
 		34E844CA1DCC5EDE00274B2A /* InsertSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E844C81DCC5EDE00274B2A /* InsertSongViewController.swift */; };
 		34E844CB1DCC5EDE00274B2A /* InsertSongViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E844C91DCC5EDE00274B2A /* InsertSongViewController.xib */; };
+		34F5C0FE1E0A4B69007B66F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F5C0FC1E0A4B69007B66F1 /* LoginViewController.swift */; };
+		34F5C0FF1E0A4B69007B66F1 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34F5C0FD1E0A4B69007B66F1 /* LoginViewController.xib */; };
 		A1971FED0B5F908318D8349E /* Pods_KTV__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5A5FAED87F14B91AD0F07D /* Pods_KTV__.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +52,10 @@
 		340318841DCCF118000AF89D /* DownloadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
 		340318851DCCF119000AF89D /* DownloadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadViewController.xib; sourceTree = "<group>"; };
 		340318881DCD79DA000AF89D /* const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = const.swift; sourceTree = "<group>"; };
+		342255781E0A7DFD0048FC46 /* BookHouseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookHouseViewController.swift; sourceTree = "<group>"; };
+		342255791E0A7DFD0048FC46 /* BookHouseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookHouseViewController.xib; sourceTree = "<group>"; };
+		34226D0F1E0A72D6009DFA24 /* HouseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
+		34226D101E0A72D6009DFA24 /* HouseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HouseViewController.xib; sourceTree = "<group>"; };
 		34E844A71DCB6A8E00274B2A /* KTV点歌.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KTV点歌.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E844AA1DCB6A8E00274B2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34E844AC1DCB6A8E00274B2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +71,8 @@
 		34E844C51DCC407D00274B2A /* InsertSingerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InsertSingerViewController.xib; sourceTree = "<group>"; };
 		34E844C81DCC5EDE00274B2A /* InsertSongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertSongViewController.swift; sourceTree = "<group>"; };
 		34E844C91DCC5EDE00274B2A /* InsertSongViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InsertSongViewController.xib; sourceTree = "<group>"; };
+		34F5C0FC1E0A4B69007B66F1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		34F5C0FD1E0A4B69007B66F1 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		431EB5E288057D87847FBC5F /* Pods-KTV点歌.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KTV点歌.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KTV点歌/Pods-KTV点歌.debug.xcconfig"; sourceTree = "<group>"; };
 		4933821A2CEB1AEB34020977 /* Pods-KTV点歌.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KTV点歌.release.xcconfig"; path = "Pods/Target Support Files/Pods-KTV点歌/Pods-KTV点歌.release.xcconfig"; sourceTree = "<group>"; };
 		DC5A5FAED87F14B91AD0F07D /* Pods_KTV__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KTV__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +136,12 @@
 				340318841DCCF118000AF89D /* DownloadViewController.swift */,
 				340318851DCCF119000AF89D /* DownloadViewController.xib */,
 				340318881DCD79DA000AF89D /* const.swift */,
+				34F5C0FC1E0A4B69007B66F1 /* LoginViewController.swift */,
+				34F5C0FD1E0A4B69007B66F1 /* LoginViewController.xib */,
+				34226D0F1E0A72D6009DFA24 /* HouseViewController.swift */,
+				34226D101E0A72D6009DFA24 /* HouseViewController.xib */,
+				342255781E0A7DFD0048FC46 /* BookHouseViewController.swift */,
+				342255791E0A7DFD0048FC46 /* BookHouseViewController.xib */,
 			);
 			path = "KTV点歌";
 			sourceTree = "<group>";
@@ -217,7 +235,10 @@
 				34E844CB1DCC5EDE00274B2A /* InsertSongViewController.xib in Resources */,
 				3403187B1DCCDF54000AF89D /* AlterViewController.xib in Resources */,
 				34E844C31DCC3FAF00274B2A /* InsertViewController.xib in Resources */,
+				3422557B1E0A7DFD0048FC46 /* BookHouseViewController.xib in Resources */,
+				34F5C0FF1E0A4B69007B66F1 /* LoginViewController.xib in Resources */,
 				34E844B01DCB6A8E00274B2A /* Main.storyboard in Resources */,
+				34226D121E0A72D6009DFA24 /* HouseViewController.xib in Resources */,
 				34E844C71DCC407D00274B2A /* InsertSingerViewController.xib in Resources */,
 				3403187F1DCCE086000AF89D /* AlterSingerViewController.xib in Resources */,
 			);
@@ -281,6 +302,7 @@
 				34E844AD1DCB6A8E00274B2A /* ViewController.swift in Sources */,
 				34E844C21DCC3FAF00274B2A /* InsertViewController.swift in Sources */,
 				340318761DCCDB78000AF89D /* InsertDownloadViewController.swift in Sources */,
+				34226D111E0A72D6009DFA24 /* HouseViewController.swift in Sources */,
 				3403187A1DCCDF54000AF89D /* AlterViewController.swift in Sources */,
 				34E844CA1DCC5EDE00274B2A /* InsertSongViewController.swift in Sources */,
 				34E844BE1DCB6AB100274B2A /* SelectViewController.swift in Sources */,
@@ -289,7 +311,9 @@
 				3403187E1DCCE086000AF89D /* AlterSingerViewController.swift in Sources */,
 				340318891DCD79DA000AF89D /* const.swift in Sources */,
 				34E844AB1DCB6A8E00274B2A /* AppDelegate.swift in Sources */,
+				34F5C0FE1E0A4B69007B66F1 /* LoginViewController.swift in Sources */,
 				34E844C61DCC407D00274B2A /* InsertSingerViewController.swift in Sources */,
+				3422557A1E0A7DFD0048FC46 /* BookHouseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

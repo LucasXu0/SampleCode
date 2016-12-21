@@ -205,6 +205,16 @@ drop.get("selectSongInfo") { req in
     return try JSON(node: result)
 }
 
+// MARK: - 查询某首歌曲下载信息
+drop.get("selectDownloadInfo") { req in
+    
+    let songID = req.data["songID"]
+    let searchSongSQL = ("SELECT * FROM view_download WHERE SID='\(songID!.string!)'")
+    let result = try mysql.driver.mysql(searchSongSQL)
+    
+    return try JSON(node: result)
+}
+
 //MARK: - 更新歌曲信息
 drop.get("updateSongInfo") { req in
     
@@ -243,6 +253,52 @@ drop.get("deleteSongInfo") { req in
     return try JSON(node: [
         "status" : "删除成功"
         ])
+}
+
+// MARK: - 查询全部包厢
+drop.get("selectAllHouse") { req in
+    
+    let searchHouseSQL = ("SELECT * FROM House")
+    let result = try mysql.driver.mysql(searchHouseSQL)
+    return try JSON(node: result)
+}
+
+// MARK: - 预约包厢
+drop.get("bookHouse") { req in
+    
+    let startTime = req.data["startTime"]
+    let endTime = req.data["endTime"]
+    let houseName = req.data["houseName"]
+    let vipPhone = req.data["vipPhone"]
+    let remark = req.data["remark"]
+    
+    let insertReservationSQL = ("INSERT INTO Reservation (RStartTime, REndTime, RHouseName, RVIPPhone, RRemark) VALUES('\(startTime!.string!)','\(endTime!.string!)','\(houseName!.string!)','\(vipPhone!.string!)','\(remark!.string!)')")
+    let result = try mysql.driver.mysql(insertReservationSQL)
+    return try JSON(node: [
+        "status" : "预约成功"
+        ])
+}
+
+// MARK: - 取消包厢
+drop.get("cancelHouse") { req in
+
+    let houseName = req.data["houseName"]
+
+    let deleteReservationSQL = ("DELETE FROM Reservation WHERE RHouseName = '\(houseName!.string!)'")
+    let result = try mysql.driver.mysql(deleteReservationSQL)
+    return try JSON(node: [
+        "status" : "删除成功"
+        ])
+}
+
+// MARK: - 选择包厢
+drop.get("selectHouse") { req in
+    
+    let houseName = req.data["houseName"]
+    
+    let selectReservationSQL = ("SELECT * FROM Reservation WHERE RHouseName = '\(houseName!.string!)'")
+    let result = try mysql.driver.mysql(selectReservationSQL)
+    return try JSON(node:result)
 }
 
 drop.run()

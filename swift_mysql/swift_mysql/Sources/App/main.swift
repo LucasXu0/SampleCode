@@ -301,4 +301,22 @@ drop.get("selectHouse") { req in
     return try JSON(node:result)
 }
 
+// MARK: - 查询所有歌曲榜
+drop.get("selectRankingLists") { req in
+    
+    let selectRankingListSQL = ("SELECT * FROM RankingList")
+    let result = try mysql.driver.mysql(selectRankingListSQL)
+    return try JSON(node:result)
+}
+
+
+// MARK: - 查询热门歌曲
+drop.get("selectOneRankingList") { req in
+    
+    let viewName = req.data["viewName"]
+    let selectHotSongsSQL = ("SELECT * FROM \(viewName!.string!) ")
+    let result = try mysql.driver.mysql(selectHotSongsSQL)
+    return try JSON(node:result)
+}
+
 drop.run()

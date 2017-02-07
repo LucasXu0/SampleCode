@@ -3,9 +3,27 @@ import VaporMySQL
 
 let drop = Droplet()
 
-let mysql = try VaporMySQL.Provider(host: "localhost", user: "root", password: "tsui", database: "KTVMusic")
+var mysql = try VaporMySQL.Provider(host: "localhost", user: "root", password: "tsui", database: "KTVMusic")
 
 drop.addProvider(mysql)
+
+func switchMysqlAccount(accountType: String) -> Void {
+    if accountType == "ktv_normal_user" {
+        do {
+            mysql = try VaporMySQL.Provider(host: "localhost", user: "ktv_normal_user", password: "123456", database: "KTVMusic");
+        } catch  {
+            
+        }
+        drop.addProvider(mysql)
+    }else if accountType == "manager_user" {
+        do {
+            mysql = try VaporMySQL.Provider(host: "localhost", user: "ktv_manager_user", password: "123456", database: "KTVMusic")
+        } catch {
+            
+        }
+        drop.addProvider(mysql)
+    }
+}
 
 drop.get("hello") { request in
     guard let name = request.data["name"]?.string else {
@@ -17,6 +35,9 @@ drop.get("hello") { request in
 //MARK: - 登录系统
 drop.get("login") { req in
     
+    let mysql2 = try VaporMySQL.Provider(host: "localhost", user: "root", password: "tsui", database: "KTVMusic")
+    drop.addProvider(mysql2)
+
     let type = req.data["type"]
     let account = req.data["account"]
     let password = req.data["password"]
@@ -24,7 +45,7 @@ drop.get("login") { req in
     if type!.string! == "0"{ // 管理员
         
         let searchSQL = ("SELECT VIP.VIPPhone, VIP.VIPPassword FROM VIP WHERE VIP.VIPPhone = '" + "\(account!.string!)" + "';")
-        let result = try mysql.driver.mysql(searchSQL)
+        let result = try mysql2.driver.mysql(searchSQL)
         
         if (result.array?.count)! > 0{
             if result[0]!["VIPPassword"]!.string! == password!.string!{
@@ -46,7 +67,7 @@ drop.get("login") { req in
         
     } else if type!.string! == "1" { // 普通用户
         let searchSQL = ("SELECT Administrator.AdministratorID, Administrator.AdministratorPassword FROM Administrator WHERE Administrator.AdministratorID = '" + "\(account!.string!)" + "';")
-        let result = try mysql.driver.mysql(searchSQL)
+        let result = try mysql2.driver.mysql(searchSQL)
 
         if (result.array?.count)! > 0{
             if result[0]!["AdministratorPassword"]!.string! == password!.string!{
@@ -76,7 +97,7 @@ drop.get("login") { req in
 
 //MARK: - 查询歌曲
 drop.get("search") { req in
-    
+        
     //MARK: - 根据歌手查歌
     let singerName = req.data["singerName"]
     // 判空
